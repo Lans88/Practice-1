@@ -1,0 +1,32 @@
+//task 1: написать в виде строк свои фио, возраст, где живете и хобби
+var name = "Artem"
+var secondName = "Bazhanov"
+var age = "33"
+var liveInCity = "Samara"
+var hobby = "snowboard"
+
+//task 2: Собрать из строк выше одну большую строку
+print("Hello, my name is \(name) \(secondName). I am \(age) years and i live in \(liveInCity) and ride on \(hobby).")
+
+//task 3: Написать 10 строк и собрать в одну их с помощью интерполяции подставляя в нужных местах переносы и пробелы
+var country = "Russia"
+var continent = "Eurasia"
+var seasonNow = "winter"
+var mounthNow = "January"
+var year = "2022"
+print("Hi!\tMyname\tis\t\(name)\tlive\tin\t\(country).\nnow\thas\tcome\t\(seasonNow)\tand\t\(year)year.")
+
+//task 4: разбить имя на символы и перенести каждую букву на новую строку
+var charName = Array("Artem")
+print(charName[0],"\n",
+    charName[1],"\n",
+    charName[2],"\n",
+    charName[3],"\n",
+    charName[4],"\n")
+
+//task 5: Создать Int и String, преобразовать Int -> String и сложить в одну строку
+let valueInt = 5
+let valueString = "Five"
+var intInString = String(valueInt)
+var resultSum = intInString + valueString
+print(resultSum)
