@@ -1,0 +1,47 @@
+//Задача 1: Написать vars и lets всех типов данных, вывести минимальные и максимальные значения у числовых данных
+let a: Int = -7
+let b: UInt = 4
+var c: Float = 4.2
+var d: Double = 6.26484
+var str: String = "Hello, World"
+let minInt = Int.min
+print(minInt)
+let maxInt = Int.max
+print(maxInt)
+let minUint = UInt.min
+print(minUint)
+let maxUint = UInt.max
+print(maxUint)
+
+//Задача 2: Создать список товаров с различными харктеристиками(количество, название), исп. typealias.
+typealias Name = String
+typealias Amount = Int
+var NameGoods: Name = "Orange"
+var AmountOrange: Amount = 23
+
+//Задача 3: Напишите различные выражения с приведением типа данных
+let value1 = 3
+var value2 = 3.14
+var resIntInDouble = Double(value1)
+type(of: resIntInDouble)
+var resDoubleInInt = Int(value2)
+type(of: resDoubleInInt)
+
+//Задача 4: Создать калькулятор
+var x = 2
+var y = 4
+var resultSum = x + y
+print(resultSum)
+var resultSubstraction = y - x
+print(resultSubstraction)
+var resultmultiplication = x * y
+print(resultmultiplication)
+var resultdivisionSign = y / x
+print(resultdivisionSign)
+
+//Задача 5: Ввод информации через консоль readline() и вывод через print()
+import Foundation
+print("Введите первое значение: ")
+var a = readLine()
+print("Введите второе значение: ")
+var b = readLine()
