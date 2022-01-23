@@ -30,3 +30,51 @@ let valueString = "Five"
 var intInString = String(valueInt)
 var resultSum = intInString + valueString
 print(resultSum)
+
+//продвинутый уровень
+//task 1: Создать 5-6 строк с городами и странами, если название города совпадает со страной, то принт правильно, если не совпало то не правильно.
+let moskow = "Moskow"
+let madrid = "Madrid"
+let paris = "Paris"
+let tokyo = "Tokyo"
+let kiev = "Kiev"
+
+let rus = "Russia"
+let spa = "Spain"
+let fra = "France"
+let jap = "Japan"
+let ukr = "Ukrain"
+if moskow == rus {
+    print("correct")
+} else {
+    print("incorrect")
+}
+
+//task 2: проверить страны на содержание буквы А
+var countryArray: [String] = []
+countryArray.append(rus)
+countryArray.append(spa)
+countryArray.append(fra)
+countryArray.append(jap)
+countryArray.append(ukr)
+print(countryArray)
+var symbolArray = [String]()
+for symbol in countryArray {
+    if symbol.contains("b") {
+        symbolArray.append(symbol)
+    } else {
+        print("No Symbol")
+    }
+}
+
+//task 3: Создать строку с символами кирилицей строчные рандом.
+var randomString = "оивмкгг"
+
+//task 4: замените символы строчной кирилицы на заглавные создав отдельную переменную
+var capitalRandomString = "ОИВМКГГ"
+randomString = capitalRandomString
+print(capitalRandomString)
+var latString = "qwerty"
+capitalRandomString = latString
+print(capitalRandomString)
+
